@@ -1,4 +1,5 @@
 import "./App.css";
+import LoadingAnimation from "./Loading";
 import RecapAnimation from "./RecapAnimation";
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       </div> */}
         <button className="btn">Hover Me</button>
         <RecapAnimation />
+        <LoadingAnimation />
       </div>
     </>
   );
