@@ -62,6 +62,7 @@
   transition-duration: 500ms;
   transition-timing-function: ease;
   position: relative;
+  overflow: hidden;
 }
 .btn::after {
   content: "";
@@ -71,8 +72,16 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(100px);
+  transition: all;
+  transform: translate(110px);
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  z-index: -1;
 }
 .btn:hover {
   transform: scale(1.05);
+  color: white;
+}
+.btn:hover:after {
+  transform: translate(0px);
 }

@@ -1,0 +1,17 @@
+.box {
+  background-color: red;
+  width: 200px;
+  height: 150px;
+  animation-name: moving;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* when i do this it will go at the end and then come form end to start */
+}
+@keyframes moving {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(1400px);
+  }
+}
